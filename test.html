@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>popuper</title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="PopupBlock.js"></script>
+	<style>
+		.g-hidden {
+			display: none;
+		}
+
+		.page-fader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			opacity: 0.35;
+			z-index: 1000;
+			filter: alpha(opacity=35);
+		}
+
+		.popup-block {
+			position: fixed;
+			left: 50%;
+			top: 33%;
+			width: 24em;
+			margin-left: -12em;
+			z-index: 1001;
+		}
+
+		.show-popup {
+			border-bottom: 1px dotted black;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+<span class="show-popup">show it</span>
+
+<div class="page-fader g-hidden"></div>
+<div class="popup-container g-hidden">
+	SOME CONTENT <span class="icon-close">[x]</span>
+</div>
+
+<script>
+	$(function () {
+		var container = $('.popup-container');
+		var popup = new f.ui.PopupBlock(container, {
+			fader: '.page-fader',
+			open: 'span.show-popup',
+			close: container.find('.icon-close'),
+			onShow: function () {
+				// do some useful stuff here
+			},
+			onHide: function () {
+				// do some unuseful stuff here
+			}
+		});
+	});
+</script>
+
+</body>
+</html>

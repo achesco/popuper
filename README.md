@@ -23,7 +23,7 @@ Extremely lightweight (just a few lines of code) script to show "modal" popup bl
 ```js
 $(function () {
 	var container = $('.popup-container');
-	var popup = new f.ui.PopupBlock(, {
+	var popup = new f.ui.PopupBlock(container, {
 		fader: '.page-fader',
 		open: 'span.show-popup',
 		close: container.find('.icon-close'),
