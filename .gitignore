@@ -11,10 +11,10 @@ bak
 robots.txt
 .htaccess
 .htpasswd
-/.idea
+.idea
 
-/.settings
+.settings
 .project
 .buildpath
-/.externalToolBuilders
-/cache.properties
+.externalToolBuilders
+cache.properties
