@@ -1,5 +1,7 @@
 #popuper
 
+Extremely lightweight (just a few lines of code) script to show "modal" popup blocks.
+
 ##Usage
 
 
