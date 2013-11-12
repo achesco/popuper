@@ -21,18 +21,26 @@
 			filter: alpha(opacity=35);
 		}
 
-		.popup-block {
+		.popup-container {
 			position: fixed;
 			left: 50%;
 			top: 33%;
 			width: 24em;
-			margin-left: -12em;
+			margin-left: -14em;
+			padding: 2em;
 			z-index: 1001;
+			background: white;
+			min-height: 10em;
 		}
 
 		.show-popup {
 			border-bottom: 1px dotted black;
 			cursor: pointer;
+		}
+
+		.icon-close {
+			cursor: pointer;
+			border: 1px solid gray;
 		}
 	</style>
 </head>

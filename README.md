@@ -28,7 +28,8 @@ $(function () {
 		open: 'span.show-popup',
 		close: container.find('.icon-close'),
 		onShow: function () {
-			// do some useful stuff here
+			// do some useful stuff here,
+			// positioning for example
 		},
 		onHide: function () {
 			// do some unuseful stuff here
@@ -54,7 +55,7 @@ $(function () {
 	filter: alpha(opacity=35);
 }
 
-.popup-block {
+.popup-container {
 	position: fixed;
 	left: 50%;
 	top: 33%;
