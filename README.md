@@ -23,7 +23,7 @@ Extremely lightweight (just a few lines of code) script to show popup blocks. Us
 ```js
 $(function () {
 	$('.popup-container').popuper({
-		hiddenClass: 'g-hideen',
+		hiddenClass: 'g-hidden',
 		fader: '.page-fader',
 		open: 'span.show-popup',
 		close: container.find('.icon-close'),
