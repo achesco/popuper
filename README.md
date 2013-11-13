@@ -8,12 +8,12 @@ Extremely lightweight (just a few lines of code) script to show popup blocks. Us
 ###Possible options
 ```js
 /**
- * @param {Object} hParam Настройки:
- * @option {String|Element|jQuery} fader Блок тени.
- * @option {String|Element|Array[Element]|jQuery} open Блоки для показа/скрытия попапа.
- * @option {String|Element|Array[Element]|jQuery} close Блоки для закрытия попапа.
- * @option {Function} onShow Функция, выполняемая при открытии.
- * @option {Function} onHide Функция, выполняемая при закрытии.
+ * @param {Object} hParam Options:
+ * @option {String|Element|jQuery} fader Fader block (selector, DOM-element or jQuery).
+ * @option {String|Element|Array[Element]|jQuery} open Popup runner block or link.
+ * @option {String|Element|Array[Element]|jQuery} close Inner Popup close element, will be searched inside main element.
+ * @option {Function} onShow Callback, being called upon show event.
+ * @option {Function} onHide Callback, being called upon hide event.
  */
 ```
 
