@@ -3,7 +3,7 @@
 <head>
 	<title>popuper</title>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="PopupBlock.js"></script>
+	<script src="popuper.js"></script>
 	<style>
 		.g-hidden {
 			display: none;
@@ -59,17 +59,10 @@
 
 <script>
 	$(function () {
-		var container = $('.popup-container');
-		var popup = new f.ui.PopupBlock(container, {
+		$('.popup-container').popuper({
 			fader: '.page-fader',
 			open: 'span.show-popup',
-			close: container.find('.icon-close'),
-			onShow: function () {
-				// do some useful stuff here
-			},
-			onHide: function () {
-				// do some unuseful stuff here
-			}
+			close: '.icon-close'
 		});
 	});
 </script>
