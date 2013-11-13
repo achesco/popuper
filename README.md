@@ -1,6 +1,6 @@
 #popuper
 
-Extremely lightweight (just a few lines of code) script to show "modal" popup blocks.
+Extremely lightweight (just a few lines of code) script to show popup blocks. Use page fader to make it "modal".
 
 ##Usage
 
