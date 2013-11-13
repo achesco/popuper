@@ -4,6 +4,15 @@ Extremely lightweight (just a few lines of code) script to show popup blocks. Us
 
 ##Usage
 
+Get the [`jquery.popuper.js`](https://github.com/chesco-als/popuper/raw/master/jquery.popuper.js).
+Add to page:
+
+```html
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery.popuper.js" type="text/javascript"></script>
+```
+
+Checkout this [example](https://github.com/chesco-als/popuper/blob/master/example.html).
 
 ###Possible options
 ```js
