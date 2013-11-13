@@ -1,4 +1,4 @@
-#popuper
+#jquery.popuper
 
 Extremely lightweight (just a few lines of code) script to show popup blocks. Use page fader to make it "modal".
 
