@@ -1,3 +1,6 @@
+/**
+ * https://github.com/chesco-als/popuper
+ */
 (function ($, undefined) {
 
 	$.fn.popuper = function (options) {
@@ -10,6 +13,7 @@
 	};
 
 	$.fn.popuper.defaults = {
+		hiddenClass: 'g-hidden',
 		onShow: function () {},
 		onHide: function () {}
 	};
@@ -44,7 +48,7 @@
 		{
 			this.stopEvent(event);
 
-			if(this.jContainer.hasClass('g-hidden'))
+			if(this.jContainer.hasClass(this.hParam.hiddenClass))
 				this.show(event);
 			else
 				this.hide(event);
@@ -61,8 +65,8 @@
 				//.unbind("touchmove");
 			}
 
-			this.jContainer.addClass('g-hidden');
-			this.jFader.addClass('g-hidden');
+			this.jContainer.addClass(this.hParam.hiddenClass);
+			this.jFader.addClass(this.hParam.hiddenClass);
 
 			$(document).unbind('click', this.cbDocumentClick);
 			$(document).unbind('keydown', this.cbDocumentKeyDown);
@@ -84,8 +88,8 @@
 					.click(this.cbDocumentClick);
 				//.bind("touchmove", function(e){ e.preventDefault() });
 			}
-			this.jFader.removeClass('g-hidden');
-			this.jContainer.removeClass('g-hidden');
+			this.jFader.removeClass(this.hParam.hiddenClass);
+			this.jContainer.removeClass(this.hParam.hiddenClass);
 
 			$(document).click(this.cbDocumentClick);
 			$(document).keydown(this.cbDocumentKeyDown);

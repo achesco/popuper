@@ -9,6 +9,7 @@ Extremely lightweight (just a few lines of code) script to show popup blocks. Us
 ```js
 /**
  * @param {Object} hParam Options:
+ * @option {String} hiddenClass CSS class name for block hiding, 'g-hidden' by default.
  * @option {String|Element|jQuery} fader Fader block (selector, DOM-element or jQuery).
  * @option {String|Element|Array[Element]|jQuery} open Popup runner block or link.
  * @option {String|Element|Array[Element]|jQuery} close Inner Popup close element, will be searched inside main element.
@@ -22,6 +23,7 @@ Extremely lightweight (just a few lines of code) script to show popup blocks. Us
 ```js
 $(function () {
 	$('.popup-container').popuper({
+		hiddenClass: 'g-hideen',
 		fader: '.page-fader',
 		open: 'span.show-popup',
 		close: container.find('.icon-close'),
