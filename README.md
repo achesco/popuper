@@ -8,7 +8,6 @@ Extremely lightweight (just a few lines of code) script to show popup blocks. Us
 ###Possible options
 ```js
 /**
- * @param {String|Element|jQuery} container Контейнер попапа.
  * @param {Object} hParam Настройки:
  * @option {String|Element|jQuery} fader Блок тени.
  * @option {String|Element|Array[Element]|jQuery} open Блоки для показа/скрытия попапа.
