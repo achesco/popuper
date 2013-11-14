@@ -12,8 +12,6 @@ Add to page:
 <script src="jquery.popuper.js" type="text/javascript"></script>
 ```
 
-Checkout this [example](https://github.com/chesco-als/popuper/blob/master/example.html).
-
 ###Possible options
 ```js
 /**
@@ -75,3 +73,6 @@ $(function () {
 	z-index: 1001;
 }
 ```
+
+###Example with CSS animations
+[It's here](https://github.com/chesco-als/popuper/blob/master/example.html).
