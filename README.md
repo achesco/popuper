@@ -19,7 +19,9 @@ Checkout this [example](https://github.com/chesco-als/popuper/blob/master/exampl
 /**
  * @param {Object} hParam Options:
  * @option {String} hiddenClass CSS class name for block hiding, 'g-hidden' by default.
- * @option {String|Element|jQuery} fader Fader block (selector, DOM-element or jQuery).
+ * @option {String} animatedClass CSS class name for animation purposes ([see the example](https://github.com/chesco-als/popuper/blob/master/example.html)).
+ * @option {Number} hideDelay Delay between `hiddenClass` and `animatedClass` assignation, defaults to 0.
+ * @option {String|Element|jQuery} fader Fader block (selector, DOM-element or jQuery), optional.
  * @option {String|Element|Array[Element]|jQuery} open Popup runner block or link.
  * @option {String|Element|Array[Element]|jQuery} close Inner Popup close element, will be searched inside main element.
  * @option {Function} onShow Callback, being called upon show event.
