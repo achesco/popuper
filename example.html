@@ -6,7 +6,7 @@
 	<script src="jquery.popuper.js"></script>
 	<style>
 		.g-hidden {
-			display: none;
+			display: none !important;
 		}
 
 		.page-fader {
@@ -16,9 +16,13 @@
 			width: 100%;
 			height: 100%;
 			background: #000;
-			opacity: 0.35;
 			z-index: 1000;
 			filter: alpha(opacity=35);
+
+			opacity: 0.35;
+			-webkit-transition: opacity .5s ease-in-out;
+			-moz-transition: opacity .5s ease-in-out;
+			transition: opacity .5s ease-in-out;
 		}
 
 		.popup-container {
@@ -31,6 +35,18 @@
 			z-index: 1001;
 			background: white;
 			min-height: 10em;
+
+			opacity: 1;
+			-webkit-transition: opacity .5s ease-in-out;
+			-moz-transition: opacity .5s ease-in-out;
+			transition: opacity .5s ease-in-out;
+		}
+
+		.g-animated {
+			opacity: 0;
+			-webkit-transition: opacity .5s ease-in-out;
+			-moz-transition: opacity .5s ease-in-out;
+			transition: opacity .5s ease-in-out;
 		}
 
 		.show-popup {
@@ -48,8 +64,8 @@
 
 <span class="show-popup">show it</span>
 
-<div class="page-fader g-hidden"></div>
-<div class="popup-container g-hidden">
+<div class="page-fader g-hidden g-animated"></div>
+<div class="popup-container g-hidden g-animated">
 	SOME CONTENT <span class="icon-close">[x]</span>
 	<p>
 		Click outside this block to hide it.
@@ -60,6 +76,9 @@
 <script>
 	$(function () {
 		$('.popup-container').popuper({
+			hiddenClass: 'g-hidden',
+			animatedClass: 'g-animated',
+			hideDelay: 500,
 			fader: '.page-fader',
 			open: 'span.show-popup',
 			close: '.icon-close'
