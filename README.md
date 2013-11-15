@@ -75,4 +75,4 @@ $(function () {
 ```
 
 ###Example with CSS animations
-[It's here](https://github.com/chesco-als/popuper/blob/master/example.html).
+[It's here](https://rawgithub.com/chesco-als/popuper/master/example.html).
