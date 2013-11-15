@@ -1,6 +1,7 @@
 #jquery.popuper
 
-Extremely lightweight (just a few lines of code) script to show popup blocks. Use page fader to make it "modal".
+Extremely lightweight jquery plugin script to show popup blocks. No fancy effects and redundant gimmicks, full
+control over the process instead.
 
 ##Usage
 
@@ -26,6 +27,8 @@ Add to page:
  * @option {Function} onHide Callback, being called upon hide event.
  */
 ```
+
+Use page fader to make block it "modal".
 
 ###Example
 
