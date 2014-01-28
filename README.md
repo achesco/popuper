@@ -34,7 +34,8 @@ Use page fader to make block it "modal".
 
 ```js
 $(function () {
-	$('.popup-container').popuper({
+	var container = $('.popup-container');
+	container.popuper({
 		hiddenClass: 'g-hidden',
 		fader: '.page-fader',
 		open: 'span.show-popup',
